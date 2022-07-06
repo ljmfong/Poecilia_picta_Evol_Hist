@@ -14,7 +14,7 @@ The following pipeline is split into # parts and is labelled in the respective d
 
 Pipeline to analyse SNP segregation patterns and to identify sex-linked genes from RNA-seq data of a cross (parents and offspring of both sexes) using **[SEX-DETector](https://gitlab.in2p3.fr/sex-det-family/sex-detector/-/tree/master/)**
 
-#### a. Filter Fastq Files
+### a. Filter Fastq Files
 **[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)**: Quality check your fastq files. Example command:
 
 * Important QC reports include: Per base sequence quality, Per sequence quality scores, Per seq GC content, Overrepresented sequences
@@ -31,7 +31,7 @@ Pipeline to analyse SNP segregation patterns and to identify sex-linked genes fr
 * Run HISAT2 Mapping:
 
 
-#### b. Constructring _de novo_ assembly
+### b. Constructring _de novo_ assembly
 
 **[Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki)**: Build _de novo_ assembly. Trinity has a three step-process (Inchworm, Chrysalis, and Butterfly), some of the steps can take a long time. It is recommended to build the assembly in steps.
 
@@ -50,7 +50,7 @@ Custom script is used to determine assembly statistics (**03.assembly_stats.py**
 
 
 
-#### c. Filtering Transcriptome 
+### c. Filtering Transcriptome 
 Steps to filter transcriptome, removing redundancy,non-coding RNA and transcripts without an open reading frame
 
 * **[RSEM](https://deweylab.github.io/RSEM/)** & **[Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) Using Trinity Scripts**: Map reads to the _de novo_ transcriptome. 
@@ -72,5 +72,29 @@ Custom scripts are used to identify top BLAST hit (**06.get-ncrna.py**) and filt
 * Final coding region predictions:
 
 
-#### d. SEX-DETector
+### d. SEX-DETector
+SEX-DETector requires a gametologs to coassemble into one single transcript. We need to further assemble the transcripts into contigs.
 
+* **[CAP3](http://seq.cs.iastate.edu/cap3.html)**: Assemble contigs.
+* Merge CAP3 singlets and contigs:
+
+* **[BWA](http://bio-bwa.sourceforge.net/)**: Map trimmed reads to the final assembly
+* Build BWA index:
+* Align reads:
+* Generate SAM format:
+
+* **[SAMtools](http://www.htslib.org/doc/samtools.html)**: Convert SAMs to BAMs
+* Build index:
+* Compress into BAM files:
+* Order individual BAm files:
+
+* **[reads2snp](https://kimura.univ-montp2.fr/PopPhyl/index.php?section=tools)**: Genotype individuals at each locus. Note the output files:
+* .alr - 
+* .gen -
+* Generate the gen_summary file -
+* Run SEX-DETector
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## _P. picta_ PAML
