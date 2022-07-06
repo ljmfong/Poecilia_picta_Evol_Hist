@@ -92,6 +92,3 @@ SEX-DETector requires a gametologs to coassemble into one single transcript. We 
 * .gen -
 * Generate the gen_summary file -
 * Run SEX-DETector
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## _P. picta_ PAML
