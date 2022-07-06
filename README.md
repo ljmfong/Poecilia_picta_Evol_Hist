@@ -8,4 +8,7 @@ The following pipeline is split into # parts and is labelled in the respective d
 2. P. picta PAML (phylogenetic analysis)
 3. Characterization of P. picta Y Chromosome
 4. Identiftying the ancestral sequence of P. picta
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+P. picta SEX-DETector
 
