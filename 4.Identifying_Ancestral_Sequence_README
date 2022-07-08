@@ -1,0 +1,4 @@
+## Identifying the Ancestral Sequence in _P. picta_
+The pipeline to identify the ancestral sequence in the Poeciliids of interest (_P. picta_, _P. reticulata_, _P. wingei_, and _P. parae_). The sequences used for this analysis are all paired-end DNA-seq.
+The sequences for _P. picta_ and _P. wingei_ can be found under National Center for Biotechnology Information Sequencing Read Archive BioProject ID **[PRJNA528814](https://www.ncbi.nlm.nih.gov/sra/PRJNA528814)**.
+The sequences for _P. parae_ can be found under National Center for Biotechnology Information Sequencing Read Archive BioProject ID **[PRJNA714257](https://www-ncbi-nlm-nih-gov.ezproxy.library.ubc.ca/bioproject/?term=PRJNA714257)**.
