@@ -6,6 +6,6 @@ The following pipeline is split into # parts and is labelled in the respective d
 
 1. _P. picta_ SEX-DETector (inferring sex-linked sequences)
 2. _P. picta_ PAML (phylogenetic analysis)
-3. Characterization of P. picta Y Chromosome
+3. Characterization of Y Chromosome
 4. Identiftying the ancestral sequence of P. picta
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
