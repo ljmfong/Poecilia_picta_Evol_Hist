@@ -1,5 +1,5 @@
 # _Poecilia picta_ Evolutionary History Pipeline
-This directory contains scripts and pipelines used in the Evolutionary history of the Poecilia picta sex chromosome by: xxxx.
+This directory contains scripts and pipelines used in the Evolutionary history of the Poecilia picta sex chromosome by: Fong et al.2023 _GBE_
 For further questions, please contact Lydia Fong: ljmfong@zoology.ubc.ca
 
 The following pipeline is split into 4 parts and is labelled in the respective directories.
